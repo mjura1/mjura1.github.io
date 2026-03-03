@@ -1,0 +1,19 @@
+* {
+    font-family: monospace;
+    background-color: #344e41;
+    color: #dad7cd;
+    
+}
+
+*::selection {
+    color: #344e41;
+    background-color: #dad7cd;
+}
+
+a {
+  font-size: 1.75rem;
+}
+a:hover 
+{
+  color:antiquewhite;
+}

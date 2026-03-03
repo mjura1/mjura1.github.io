@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+    <div class="container">
+        <Header/>
+        <hr/>
+        <div class="about">
+            Undergraduate Computer Engineering student interested in Machine Learning, DevOps, and System Software. I work primarily in Python, C/C++, and C#, and am currently brushing up on frontend development and learning Zig.
+            <br><br>
+            Software Engineering intern at Troia, where I spent two summers working with IBM Maximo EAM. I have an employment contract lined up for after I finish my master's degree.
+            <br><br>
+            Contact:
+            <a 
+            href="data:text/plain;base64,bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ"
+            onclick="navigator.clipboard.writeText(atob('bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ')); this.textContent='Copied!'; return false;"
+            style="font-size:1.25rem"
+            >matic [dot] developer [at] proton [dot] me
+            </a>
+        </div>
+        <hr>
+        <div class="projects">
+            <h3>projects wip</h3>
+        </div>
+        <hr>
+        <div class="education">
+            <ul>
+                <li>University of Maribor - Maribor, Slovenia (2023-Present)
+                    <ul>
+                        <li>Undergraduate degree in Computer Engineering</li>                    
+                    </ul>
+                </li>
+                <li>
+                    Ravne High School - Ravne na Koroškem, Slovenia (2021 - 2023)
+                    <ul>
+                        <li>
+                            High school diploma
+                        </li>
+                        <li>Golden Graduate</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</Layout>
+
+<style>
+  .container {
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    vertical-align: middle;
+    text-align:justify;
+    text-shadow: 0.5rem;
+    font-size: 1.25rem;
+  }
+</style>
