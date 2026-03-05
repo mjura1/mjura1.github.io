@@ -7,26 +7,20 @@ import '../stylesheets/style.css';
 <Layout>
     <div class="container">
         <Header/>
-        <hr/>
         <div class="about">
-            Undergraduate Computer Engineering student interested in Machine Learning, DevOps, and System Software. I work primarily in Python, C/C++, and C#, and am currently brushing up on frontend development and learning Zig.
-            <br><br>
-            DevOps and Software Engineering intern at Troia, where I spent two summers working with IBM Maximo EAM. I have an employment contract lined up for after I finish my master's degree.
-            <br><br>
-            Contact:
-            <a 
-            href="data:text/plain;base64,bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ"
-            onclick="navigator.clipboard.writeText(atob('bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ')); this.textContent='Copied!'; return false;"
-            style="font-size:1.25rem"
-            >matic [dot] developer [at] proton [dot] me
-            </a>
+            <p>
+                <i>Undergraduate Computer Engineering student.</i> Focused on Machine Learning, DevOps and System Software. Intern at <a href="https://troia.eu/">Troia</a>.
+            </p>
+            <p>
+                I primarily work in Python, C/C++ and C#.  
+            </p>
         </div>
-        <hr>
         <div class="projects">
-            <h3>projects wip</h3>
+            <h4>Projects</h4>
+            <p>wip</p>
         </div>
-        <hr>
         <div class="education">
+            <h4>Education</h4>
             <ul>
                 <li>University of Maribor - Maribor, Slovenia (2023-Present)
                     <ul>
@@ -47,17 +41,41 @@ import '../stylesheets/style.css';
                 </li>
             </ul>
         </div>
+        <div class="contact">
+            <h4>Contact</h4>
+            <ul class="links">
+                <li>
+                    <a 
+                    href="mailto:bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ"
+                    onclick="this.href='mailto:'+atob('bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ'); return true;">
+                        E-Mail
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/mjura1">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@mqtic">YouTube</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </Layout>
 
 <style>
   .container {
-    max-width: 60vw;
+    max-width: 40vw;
     margin: 0 auto;
     padding: 2rem 1.5rem;
     vertical-align: middle;
     text-align:justify;
     text-shadow: 0.5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
+
+  .links > li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
 </style>

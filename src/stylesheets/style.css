@@ -1,19 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
 * {
-    font-family: monospace;
-    background-color: #344e41;
-    color: #dad7cd;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    background-color:black;
+    color: white;
+    letter-spacing: 0.02rem;
     
 }
 
 *::selection {
-    color: #344e41;
-    background-color: #dad7cd;
+    color: black;
+    background-color: white;
 }
 
 a {
-  font-size: 1.75rem;
+  font-size: 1rem;
 }
 a:hover 
 {
-  color:antiquewhite;
+  color: antiquewhite;
 }
