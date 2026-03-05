@@ -7,9 +7,12 @@ import '../stylesheets/style.css';
 <Layout>
     <div class="container">
         <Header/>
+          <div class="nameboard" style="display:flex">
+            <span id="name">Matic Jurač</span><span id="alias">a.k.a. mjura</span>
+          </div>
         <div class="about">
             <p>
-                <i>Undergraduate Computer Engineering student.</i> Focused on Machine Learning, DevOps and System Software. Intern at <a href="https://troia.eu/">Troia</a>.
+                Undergraduate Computer Engineering student. Focused on Machine Learning, DevOps and System Software. Intern at <a target="_blank" href="https://troia.eu/">Troia</a>.
             </p>
             <p>
                 I primarily work in Python, C/C++ and C#.  
@@ -52,7 +55,7 @@ import '../stylesheets/style.css';
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/mjura1">GitHub</a>
+                    <a href="https://github.com/mjura1" target="_blank">GitHub</a>
                 </li>
             </ul>
         </div>
@@ -68,14 +71,36 @@ import '../stylesheets/style.css';
     text-align: left;
     text-shadow: 0.5rem;
     font-size: 1rem;
-  }
-  .links {
+}
+
+.nameboard {
+  padding: 5rem 0 0 0;
+  display:flex;
+  align-items: flex-end;
+}
+
+#name {
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+  line-height: 1;
+}
+
+#alias {
+  color: grey;
+  font-style: italic;
+  font-size: 0.9rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.links {
     list-style-type: none;
     padding-left: 0;
-  }
-  .links > li {
+}
+
+.links > li {
     display: inline-block;
     margin-right: 1rem;
-  }
+}
   
 </style>
