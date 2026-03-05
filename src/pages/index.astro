@@ -42,12 +42,12 @@ import '../stylesheets/style.css';
             </ul>
         </div>
         <div class="contact">
-            <h3>Contact</h3>
+            <h3>Contact & links</h3>
             <ul class="links">
                 <li>
                     <a 
                     href="mailto:bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ"
-                    onclick="this.href='mailto:'+atob('bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ'); return true;">
+                    onclick="this.href='mailto:'+atob('bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ'); setTimeout(() => this.href='mailto:bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ', 200);return true;">
                         E-Mail
                     </a>
                 </li>
