@@ -1,46 +1,101 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import '../stylesheets/style.css';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import "../stylesheets/style.css";
 ---
 
 <Layout>
     <div class="container">
-        <Header/>
-          <div class="nameboard" style="display:flex">
-            <span id="name">Matic Jurač</span><span id="alias">a.k.a. mjura</span>
-          </div>
+        <Header />
+        <div class="nameboard" style="display:flex">
+            <span id="name">Matic Jurač</span><span id="alias"
+                >a.k.a. mjura</span
+            >
+        </div>
         <div class="about">
+            <p>DevOps Engineer and Backend Software developer.</p>
             <p>
-                Undergraduate Computer Engineering student. Focused on Machine Learning, DevOps and System Software. Intern at <a target="_blank" href="https://troia.eu/">Troia</a>.
-            </p>
-            <p>
-                I primarily work in Python, C/C++ and C#.  
+                Intern at <a
+                    style="color:#ffff00"
+                    href="https://www.troia.eu/en">Troia</a
+                >.
             </p>
         </div>
         <div class="projects">
             <h3>Projects</h3>
-            <p>wip</p>
+            <ul>
+                <li>
+                    <a
+                        href="https://github.com/rv2-best/studentski-predmetnik-app"
+                        >Študentski predmetnik</a
+                    >
+                    <sub class="tech"> leadership, GitHub Actions, Docker</sub>
+                    <p>
+                        I was the project lead and infra/DevOps engineer at a
+                        project with 14 other students. We created a
+                        note-sharing and professor-rating platform for students
+                        all around the world.
+                    </p>
+                </li>
+                <li>
+                    <a href="https://github.com/Nepozorni/Nepozorni-Main"
+                        >Nepozorni</a
+                    >
+                    <sub class="tech"
+                        >Ultralytics, Unity, CI/CD, tkinter, python</sub
+                    >
+                    <p>
+                        As part of my studies, I was expected to create a final
+                        project. Since I had taken courses on machine learning
+                        with autonomous driving, I worked with two collaborators
+                        to create a system which determines the attentiveness of
+                        a driver using machine learning and will notify them if
+                        they're not being attentive.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="projects">
+            <h3>Skills</h3>
+
+            <h5>Work Experience</h5>
+            <ul>
+                <li>Python, Jython</li>
+                <li>RedHat OpenShift</li>
+                <li>Oracle DB, IBM Db2</li>
+                <li>IBM Maximo 7.6.2, IBM MAS 9.0+</li>
+                <li>Proxmox</li>
+                <li>Linux</li>
+                <li>RESTful API, SOAP API</li>
+            </ul>
+            <h5>I'm learning</h5>
+            <ul>
+                <li>Go</li>
+                <li>Typst</li>
+                <li>Nix</li>
+                <li>PostgreSQL</li>
+            </ul>
         </div>
         <div class="education">
             <h3>Education</h3>
             <ul>
-                <li>University of Maribor - Maribor, Slovenia (2023-Present)
+                <li>
+                    University of Maribor - Maribor, Slovenia (2023-2026)
                     <ul>
-                        <li>Undergraduate degree in Computer Engineering</li>                    
+                        <li>Undergraduate degree in Computer Engineering</li>
                     </ul>
                 </li>
                 <li>
-                    Ravne High School - Ravne na Koroškem, Slovenia (2020 - 2023)
+                    Ravne High School - Ravne na Koroškem, Slovenia (2020 -
+                    2023)
                     <ul>
-                        <li>
-                            High school diploma
-                        </li>
+                        <li>High school diploma</li>
                         <li>Golden Graduate</li>
                     </ul>
                 </li>
                 <li>
-                    High School of Chemistry, Electrotechnics and Computer Science - Celje, Slovenia (2019 - 2020)
+                    High School of Chemistry, Electrotechnics and Computer
+                    Science - Celje, Slovenia (2019 - 2020)
                 </li>
             </ul>
         </div>
@@ -48,59 +103,96 @@ import '../stylesheets/style.css';
             <h3>Contact & links</h3>
             <ul class="links">
                 <li>
-                    <a 
-                    href="mailto:bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ"
-                    onclick="this.href='mailto:'+atob('bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ'); setTimeout(() => this.href='mailto:bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ', 200);return true;">
+                    <a
+                        href="mailto:bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ"
+                        onclick="this.href='mailto:'+atob('bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ'); setTimeout(() => this.href='mailto:bWF0aWMuZGV2ZWxvcGVyQHByb3Rvbi5tZQ', 200);return true;"
+                    >
                         E-Mail
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/mjura1" target="_blank">GitHub</a>
+                    <a
+                        href="https://codeberg.org/matic-developer"
+                        target="_blank">Codeberg</a
+                    >
                 </li>
+                <li>
+                    <a
+                        href="https://matic-developer.bsky.social"
+                        target="_blank">Bluesky</a
+                    >
+                </li>
+                <li>
+                  <a href="https://github.com/mjura1" target="_blank">GitHub</a>
+                </li> 
             </ul>
         </div>
     </div>
 </Layout>
 
 <style>
-  .container {
-    max-width: 40vw;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    vertical-align: middle;
-    text-align: left;
-    text-shadow: 0.5rem;
-    font-size: 1rem;
-}
+    .container {
+        max-width: 40vw;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+        vertical-align: middle;
+        text-align: left;
+        text-shadow: 0.5rem;
+        font-size: 1rem;
+    }
 
-.nameboard {
-  padding: 5rem 0 0 0;
-  display:flex;
-  align-items: flex-end;
-}
+    .nameboard {
+        padding: 2rem 0 0 0;
+        display: flex;
+        align-items: flex-end;
+    }
 
-#name {
-  font-size: 1.1rem;
-  margin-right: 1.5rem;
-  line-height: 1;
-}
+    #name {
+        font-size: 1.1rem;
+        margin-right: 1.5rem;
+        line-height: 1;
+    }
 
-#alias {
-  color: grey;
-  font-style: italic;
-  font-size: 0.9rem;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
+    #alias {
+        color: grey;
+        font-style: italic;
+        font-size: 0.9rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 
-.links {
-    list-style-type: none;
-    padding-left: 0;
-}
+    .about {
+        text-align: justify;
+    }
 
-.links > li {
-    display: inline-block;
-    margin-right: 1rem;
-}
-  
+    .links {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .links > li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .tech {
+        color: grey;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .container {
+            max-width: 80vh;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            vertical-align: middle;
+            text-align: left;
+            text-shadow: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .tech {
+            display: block;
+            margin-top: 0.5rem;
+            margin-left: 0;
+        }
+    }
 </style>
