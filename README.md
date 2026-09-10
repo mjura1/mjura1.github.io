@@ -1,0 +1,1 @@
+# No AI was used in writing this website This is 100% HI (human intelligence) Slop!
